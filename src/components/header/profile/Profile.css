@@ -1,0 +1,87 @@
+.loginContainer{
+    z-index: 999;
+}
+
+.loginContainer .loginProfile{
+    position: relative;
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.loginContainer .loginProfile > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loginContainer .loginMenu{
+    position: absolute;
+    top: 70px;
+    right: 200px;
+    padding: 10px 0;
+    background: #333;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    width: 180px;
+    box-sizing: 0 5px 25px rgba(0,0,0,.1);
+    visibility: hidden;
+}
+
+.loginContainer .loginMenu.active{
+    visibility:visible;
+}
+
+.loginMenu.active{
+    visibility:visible;
+}
+
+.loginContainer .loginMenu::before{
+    content: '';
+    position: absolute;
+    top: -11px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    transform: rotate(45deg);
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+
+.loginContainer .loginMenu > h3{
+    width: 100%;
+    text-align: center;
+    font-size: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    line-height: 1.2em;
+    
+}
+
+.loginContainer > ul, li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.loginContainer > ul, li:first-child{
+    border-top: none;
+}
+
+.listContainer{
+    display: flex;
+}
+
+#menuBtn:hover{
+    color: white !important;
+}

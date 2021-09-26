@@ -1,0 +1,75 @@
+.deleteIcon, .editIcon{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+.todoForm{
+    padding: 10px;
+    margin: 5px;    
+}
+
+.taskManager{
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    margin: 20px 50px 20px;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.taskManager > h1{
+    margin: 5px 20px 0;
+    color: whitesmoke;
+}
+
+.taskRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: whitesmoke;
+    background: linear-gradient(90deg, rgb(54, 54, 133), green);
+    margin: 5px;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: .6;
+    color: gray;
+}
+
+.todoInput{
+    background-color: lightgray;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid rgb(117, 12, 255);
+    border-radius: 20px 0 0 20px;
+}
+
+.todoInput::placeholder{
+    color: gray;
+    text-align: center;    
+}
+
+.todoInput:focus{
+    background-color: whitesmoke;
+    outline:none;
+}
+
+.addBtn{
+    cursor: pointer;
+    padding: 17px;
+    border:none;
+    border-radius: 0 4px 4px 0;
+    font-size: 20px;
+    background: linear-gradient(
+        90deg,
+        rgb(117, 12, 255) 0%,
+        rgb(12, 89, 255) 50%,
+        rgb(25, 165, 118) 100%);
+}

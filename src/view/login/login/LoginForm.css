@@ -1,0 +1,16 @@
+.formContainer{
+    z-index: 999;
+}
+
+.registerField{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.registerField > ul, li, a{
+   list-style: none; 
+   text-decoration: none;
+   font-size: 12px;
+   color: rgb(255, 72, 0);
+}

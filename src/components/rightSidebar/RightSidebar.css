@@ -1,0 +1,8 @@
+.rightSidebar{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    margin-top:20px;
+    text-align:center;
+    height: fit-content;
+}
