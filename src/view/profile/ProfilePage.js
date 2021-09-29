@@ -2,9 +2,10 @@ import React from 'react'
 import ProfileSideImg from '../../shared/img/profileSideImg.jpg'
 import './ProfilePage.css'
 import Route from '../../routes/RoutingPath'
-import {useHistory} from 'react-router-dom'
+import {useHistory, useLocation} from 'react-router-dom'
 
 function ProfilePage() {
+    const location = useLocation()
     const history = useHistory()
 
     const returnHome=(()=>{
@@ -21,6 +22,12 @@ function ProfilePage() {
                 className='homeBtn'
                 onClick={returnHome}
                 >Home</button>
+                <div className='colorPaletteLanding'>
+                    <h2>Is this your color?</h2>
+                    <div className='chosenColor'>
+                        <h1>{location.state}</h1>
+                        </div>
+                </div>
             </div>
             <div className='rightSide'>
                 <img src={ProfileSideImg} alt="" />

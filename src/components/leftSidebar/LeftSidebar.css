@@ -90,6 +90,43 @@
     margin-left: 10px ;
 }
 
-#add_workout{
-    margin: auto;
+.colorPalette{
+    width: auto;
+    height: 200px;
+    background-color: whitesmoke ;
+    background: linear-gradient(180deg, rgb(172, 172, 172)0%, rgb(58, 58, 58)100%) ;
+    border-radius: 0  0 10px 10px;
+    padding: 10px;
+}
+
+.colorContainer{
+    display: flex;
+    align-items: center;    
+}
+.colorContainer > h2{
+    color: black;
+}
+
+#p1, #p2, #p3, #p4{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 3px;
+}
+
+#p1{    
+    background: red;
+}
+
+#p2{    
+    background: Blue;
+}
+
+#p3{    
+    background: green;
+}
+
+#p4{    
+    background: Yellow;
 }
